@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="pieview">
+        <attr name="textColor" format="color">#FFFF00</attr>
+        <attr name="textSize" format="dimension">10sp</attr>
+        <attr name="borderWidth" format="dimension">3dp</attr>
+        <attr name="borderColor" format="color">#FFFF00</attr>
+        <attr name="useCustomSize" format="boolean">false</attr>
+        <attr name="width" format="dimension">20dp</attr>
+        <attr name="height" format="dimension">20dp</attr>
+    </declare-styleable>
+
+</resources>
