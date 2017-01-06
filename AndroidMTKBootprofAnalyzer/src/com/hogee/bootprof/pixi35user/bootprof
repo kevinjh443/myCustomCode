@@ -1,0 +1,60 @@
+----------------------------------------
+0	    BOOT PROF (unit:msec)
+----------------------------------------
+      3212.747092 : Kernel_init_done
+      4246.941678 : INIT: on init start
+      4266.093241 : INIT:Mount_START
+      4433.344856 : INIT:Mount_END
+      7039.908822 : BOOT_Animation:START
+      7440.248303 : Zygote:Preload Start
+      9953.608675 : Zygote:Preload 343 obtain resources in 751ms
+      9999.523779 : Zygote:Preload 41 resources in 46ms
+     10108.103311 : Zygote:Preload End
+     10401.937791 : Android:SysServerInit_START
+     10811.534928 : Android:PackageManagerService_Start
+     11055.982637 : Android:PMS_scan_START
+     11647.453836 : Android:PMS_scan_data_done:/vendor/overlay
+     11722.720399 : Android:PMS_scan_data_done:/system/framework
+     15847.616297 : Android:PMS_scan_data_done:/system/priv-app
+     17381.966666 : Android:PMS_scan_data_done:/system/app
+     17456.328385 : Android:PMS_scan_data_done:/system/custpack/app/priv-app
+     17584.598490 : Android:PMS_scan_data_done:/system/custpack/app/unremoveable
+     19987.286258 : Android:PMS_scan_data_done:/system/custpack/app/removeable
+     20011.645268 : Android:PMS_scan_data_done:/system/vendor/app
+     26701.171903 : Android:PMS_scan_data_done:/data/app
+     26705.663934 : Android:PMS_scan_END
+     26828.498779 : Android:PMS_READY
+     28890.346545 : AP_Init:[service]:[com.android.systemui]:[com.android.systemui/.keyguard.KeyguardService]:pid:2622
+     29076.401337 : AP_Init:[broadcast]:[com.android.settings]:[com.android.settings/.wfd.WifiDisplayStateReceiver]:pid:2644
+     29223.587536 : AP_Init:[]:[WebViewLoader-armeabi-v7a]:pid:2663
+     30221.801810 : AP_Init:[service]:[com.google.android.googlequicksearchbox:interactor]:[com.google.android.googlequicksearchbox/com.google.andr
+     30319.648529 : AP_Init:[activity]:[com.android.chrome]:[com.android.chrome/com.google.android.apps.chrome.document.DocumentActivity]:pid:2801
+     30372.220612 : AP_Init:[service]:[com.sohu.inputmethod.sogou]:[com.sohu.inputmethod.sogou/.SogouIME]:pid:2821
+     30514.677540 : AP_Init:[broadcast]:[android.process.media]:[com.android.providers.media/.MtpReceiver]:pid:2843
+     31073.459833 : AP_Init:[broadcast]:[com.tcl.smartsuite]:[com.tcl.smartsuite/com.tcl.target.receiver.DaemonReceiver]:pid:2907
+     31172.720823 : AP_Init:[service]:[com.android.browser:remote]:[com.android.browser/.HttpAuthService]:pid:2926
+     31289.739469 : AP_Init:[added application]:[com.quicinc.cne.CNEService]:[com.quicinc.cne.CNEService]:pid:2981:(PersistAP)
+     31336.468584 : AP_Init:[added application]:[com.android.phone]:[com.android.phone]:pid:3000:(PersistAP)
+     31469.433689 : AP_Init:[activity]:[com.tct.launcher]:[com.tct.launcher/.Launcher]:pid:3025
+     31476.539730 : Android:SysServerInit_END
+     31554.387230 : AP_Init:[service]:[com.android.printspooler]:[com.android.printspooler/.model.PrintSpoolerService]:pid:3045
+     31877.939836 : AP_Init:[broadcast]:[com.tencent.mm]:[com.tencent.mm/.booter.BluetoothReceiver]:pid:3069
+     31963.041763 : AP_Init:[content provider]:[android.process.acore]:[com.android.providers.contacts/.CallLogProvider]:pid:3090
+     32065.662909 : AP_Init:[service]:[com.android.incallui]:[com.android.dialer/com.android.incallui.InCallServiceImpl]:pid:3113
+     32524.269786 : AP_Init:[service]:[com.google.android.googlequicksearchbox:search]:[com.google.android.googlequicksearchbox/com.google.android.
+     32669.638432 : AP_Init:[service]:[com.android.smspush]:[com.android.smspush/.WapPushManager]:pid:3187
+     32776.597651 : AP_Init:[broadcast]:[com.android.contacts]:[com.android.contacts/.tct.simcontacts.SimStateReceiver]:pid:3213
+     33187.547965 : AP_Init:[service]:[com.android.contacts:remote]:[com.android.contacts/.tct.simcontacts.SimContactsService]:pid:3244
+     33256.273069 : AP_Init:[broadcast]:[com.tct.calendar]:[com.tct.calendar/.SimStateReceiver]:pid:3266
+     33494.435726 : AP_Init:[content provider]:[com.android.providers.calendar]:[com.android.providers.calendar/.CalendarProvider2]:pid:3296
+     33536.414737 : AP_Init:[content provider]:[com.google.process.gapps]:[com.google.android.gsf/.settings.GoogleSettingsProvider]:pid:3321
+     33813.911092 : AP_Init:[service]:[com.android.chrome:sandboxed_process0]:[com.android.chrome/org.chromium.content.app.SandboxedProcessService0
+     33968.733748 : AP_Init:[broadcast]:[com.google.android.partnersetup]:[com.google.android.partnersetup/.PhoneStateReceiver]:pid:3409
+     34297.723333 : AP_Init:[broadcast]:[com.jrdcom.ssv]:[com.jrdcom.ssv/.SsvReceiver]:pid:3483
+     35449.685628 : AP_Init:[service]:[com.android.chrome:privileged_process0]:[com.android.chrome/org.chromium.content.app.PrivilegedProcessServic
+     35690.035837 : AP_Init:[service]:[com.qualcomm.qcrilmsgtunnel]:[com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService]:pid:3655
+     35799.809691 : AP_Init:[broadcast]:[com.tcl.live]:[com.tcl.live/.reciever.SimStateChangedReceiver]:pid:3674
+     36822.741674 : AP_Init:[service]:[com.tcl.live:miniapp]:[com.tcl.live/.miniapp.MiniAppService]:pid:3734
+     36991.818966 : AP_Init:[broadcast]:[com.alcatel.music5]:[com.alcatel.music5/com.mixvibes.common.utils.AudioFocusManager]:pid:3758
+     38305.855480 : BOOT_Animation:END
+----------------------------------------

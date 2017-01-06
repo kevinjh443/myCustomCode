@@ -1,0 +1,76 @@
+----------------------------------------
+0	    BOOT PROF (unit:msec)
+----------------------------------------
+      4299        : preloader
+      3243        : lk
+----------------------------------------
+        47.887999 : ON
+        98.982999 :    1-swapper/0       : initcall: of_init    19.119077ms
+       145.552153 :    1-swapper/0       : probe: probe=platform_drv_probe drv=ramoops(ffffffc0010a8428)    45.427769ms
+       145.604076 :    1-swapper/0       : initcall: ramoops_init    45.627000ms
+       162.909768 :    1-swapper/0       : initcall: init_mtk_governor    15.574308ms
+       227.671999 :    1-swapper/0       : initcall: arm64_device_init    52.435692ms
+       262.063615 :    1-swapper/0       : initcall: pm_sysrq_init    18.593923ms
+       345.611923 :    1-swapper/0       : initcall: event_trace_init    47.809385ms
+       503.306077 :    1-swapper/0       : initcall: populate_rootfs   136.803231ms
+       613.540923 :    1-swapper/0       : probe: probe=mtkfb_probe drv=mtkfb(ffffffc0010e02c0)    21.102616ms
+       613.857539 :    1-swapper/0       : initcall: mtkfb_init    22.431231ms
+       916.687078 :    1-swapper/0       : probe: probe=i2c_device_probe drv=AW8739_PA(ffffffc001172b68)   159.229231ms
+      1036.652155 :    1-swapper/0       : probe: probe=i2c_device_probe drv=AW8739_PA1(ffffffc001172d10)   119.721154ms
+      1036.737078 :    1-swapper/0       : probe: probe=platform_drv_probe drv=aw8739_pa(ffffffc001172a98)   279.569924ms
+      1037.019155 :    1-swapper/0       : initcall: AW8739_pa_init   281.068385ms
+      1090.197847 :    1-swapper/0       : probe: probe=i2c_device_probe drv=stk3x1x(ffffffc0010cf958)    31.521077ms
+      1090.716078 :    1-swapper/0       : initcall: alsps_init    32.181539ms
+      1138.446771 :    1-swapper/0       : initcall: clk_debug_init    23.483308ms
+      1139.878078 :    1-swapper/0       : Kernel_init_done
+      1514.250464 :    1-init            : INIT:early-init
+      1546.881772 :  135-kworker/u16:2   : probe: probe=i2c_device_probe drv=gt1x(ffffffc001112338)   432.233539ms
+      2351.945543 :  135-kworker/u16:2   : probe: probe=i2c_device_probe drv=msg2xxx(ffffffc001112558)   804.786848ms
+      2353.243774 :  135-kworker/u16:2   : probe: probe=platform_drv_probe drv=mtk-tpd(ffffffc001111340)  1239.234619ms
+      2706.208236 :    1-init            : INIT:late-init
+      2706.305082 :    1-init            : INIT:Mount_START
+      4282.975624 :    1-init            : INIT:Mount_END
+      4756.318241 :    1-init            : setup mobicore perms ++ (on fs)
+      4757.731702 :    1-init            : setup mobicore perms -- (on fs)
+      5486.966396 :    1-init            : INIT:post-fs
+      6231.983629 :    1-init            : INIT:post-fs-data
+      6263.871398 :    1-init            : post-fs-data: on modem start
+      6296.055014 :    1-init            : INIT:boot
+      6487.565860 :  297-wmt_loader      : probe: probe=platform_drv_probe drv=fm(ffffffc0010fb150)    97.639462ms
+      6876.740400 :  308-surfaceflinger  : BOOT_Animation:START
+     10862.755794 :    1-init            : INIT:vold.decrypt=trigger_post_fs_data
+     10971.335410 :    1-init            : INIT:post-fs-data
+     11017.330948 :    1-init            : post-fs-data: on modem start
+     11260.897718 :    1-init            : INIT:vold.decrypt=trigger_restart_framework
+     11263.903179 :    1-init            : create /data/misc/mcRegistry ++ (trigger_restart_framework)
+     11264.543487 :    1-init            : create /data/misc/mcRegistry -- (trigger_restart_framework)
+     15224.004573 :  432-main            : Zygote:Preload Start
+     15348.465958 :  433-main            : Zygote:Preload Start
+     17176.854963 :  433-main            : Zygote:Preload 4161 classes in 1724ms
+     17193.630501 :  432-main            : Zygote:Preload 4161 classes in 1749ms
+     17712.837502 :  432-main            : Zygote:Preload 114 obtain resources in 260ms
+     17716.175503 :  433-main            : Zygote:Preload 114 obtain resources in 265ms
+     17722.053349 :  432-main            : Zygote:Preload 41 resources in 9ms
+     17724.981887 :  433-main            : Zygote:Preload 41 resources in 9ms
+     17927.798349 :  432-main            : Zygote:Preload End
+     18057.107042 :  433-main            : Zygote:Preload End
+     18150.277042 : 1202-system_server   : Android:SysServerInit_START
+     18763.865890 : 1202-system_server   : Android:PackageManagerService_Start
+     19388.898814 : 1202-system_server   : Android:PMS_scan_START
+     19471.573584 : 1202-system_server   : Android:PMS_scan_data:/vendor/overlay
+     19910.979892 : 1202-system_server   : Android:PMS_scan_data:/system/framework
+     19953.438200 : 1202-system_server   : Android:PMS_scan_data:/vendor/framework
+     19968.579431 : 1202-system_server   : Android:PMS_scan_data:/system/priv-app
+     24901.420981 : 1202-system_server   : Android:PMS_scan_data:/system/app
+     26131.876061 : 1202-system_server   : Android:PMS_scan_data:/vendor/priv-app
+     26186.933523 : 1202-system_server   : Android:PMS_scan_data:/system/custpack/app/unremoveable/priv-app
+     26303.896446 : 1202-system_server   : Android:PMS_scan_data:/system/custpack/app/unremoveable/withlibs
+     26927.653448 : 1202-system_server   : Android:PMS_scan_data:/system/custpack/app/removeable/withlibs
+     27434.795603 : 1202-system_server   : Android:PMS_scan_data:/system/custpack/app/removeable/withoutlibs
+     27471.393833 : 1202-system_server   : Android:PMS_scan_data:/system/vendor/app
+     27643.722757 : 1202-system_server   : Android:PMS_scan_data:/custom/plugin
+     27682.953295 : 1202-system_server   : Android:PMS_scan_END
+     28446.113143 : 1202-system_server   : Android:PMS_READY
+     29248.142607 : 1280-Binder:308_3    : BOOT_Animation:END
+     29248.180222 : OFF
+----------------------------------------
