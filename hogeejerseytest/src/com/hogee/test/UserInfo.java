@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 //指定了资源类提供服务的URI路径。
 @Path("UserInfoService")
 public class UserInfo {
- // @GET表示方法会处理HTTP GET请求
+    // @GET表示方法会处理HTTP GET请求
     @GET
     // 这里@Path定义了类的层次路径。指定了资源类提供服务的URI路径。
     @Path("/name/{i}")
@@ -31,4 +31,24 @@ public class UserInfo {
     int age = j;
     return "<User>" + "<Age>" + age + "</Age>" + "</User>";
     }
+    
+    @GET
+    @Path("/getUserInfo/{jobId}") 
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getUserInfo(@PathParam("jobId") String jobId) {
+        try {
+            int id = Integer.parseInt(jobId);
+            UserInfoDbHelper helper = new UserInfoDbHelper();
+            EmployeeModel model = helper.getUserInfo(id);
+            
+            
+            return "{\""+EmployeeModel.F_name+"\":\""+ model.v_name+"\","
+                    + "\""+EmployeeModel.F_email+"\":\""+ model.v_email+"\","
+                    + "\""+EmployeeModel.F_phone_number+"\":\""+ model.v_phone_number+"\","
+                    + "\""+EmployeeModel.F_jobinfo+"\":\"" + model.v_jobinfo+"\"}";
+        } catch (Exception e) {
+            return e.toString();
+        }
+    }
+    
 }
